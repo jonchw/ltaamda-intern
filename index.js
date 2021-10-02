@@ -17,8 +17,7 @@ require(['js/qlik'], function (qlik) {
   });
 	$( "#closePopup" ).click( function () {
 		$( '#popup' ).hide();
-	} );
-
+	
 	//open apps -- inserted here --
 	const app = qlik.openApp('2b26dd49-cdcc-49ba-b4ee-31fbf436816d', config);
 
@@ -43,3 +42,5 @@ require(['js/qlik'], function (qlik) {
 	app.visualization.get('qQJqn').then(function(vis){
 		vis.show("QV01");
 	});
+	
+	} );
