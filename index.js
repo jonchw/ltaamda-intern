@@ -1,4 +1,3 @@
-var prefix = npxi73rypiw4f5e.ap.qlikcloud.com.substr( 0, npxi73rypiw4f5e.ap.qlikcloud.com.toLowerCase().lastIndexOf( "/extensions" ) + 1 );
 var config = {
 	host: npxi73rypiw4f5e.ap.qlikcloud.com,
 	prefix: '/',
