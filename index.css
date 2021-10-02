@@ -1,0 +1,86 @@
+.flex-container {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0 45px 45px 0;
+}
+
+.qvplaceholder, .qvobject {
+	flex: 1 1 auto;
+	height: 260px;
+	min-width: 400px;
+	margin: 10px 0 0 45px;
+}
+
+.qvplaceholder, .qvobject1 {
+	flex: 1 1 auto;
+	height: 600px;
+	min-width: 800px;
+	margin: 10px 0 0 55px;
+}
+/* Add a black background color to the top navigation */
+.topnav {
+  background-color: #032A67;
+  overflow: hidden;
+  font-family: sans-serif;
+  font-size: 5px;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: #ffffff;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #5187DC;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: #1753B3;
+  color: white;
+}
+#popup {
+	background-color: #0000ff;
+	color: #0000FF;
+	position: fixed;
+	max-width: 250px;
+	padding: 10px;
+	margin: 10px;
+	bottom: 0;
+	right: 0;
+	display: none;
+	border-radius: 5px;
+	z-index: 6;
+	font-family: sans-serif;
+}
+
+.close {
+	cursor: pointer;
+	background: 0 0;
+	border: 0;
+	float: right;
+	font-size: 21px;
+	font-weight: 700;
+	line-height: 1;
+	color: #0000ff;
+	text-shadow: 0 1px 0 #fff;
+	opacity: .2;
+	position: absolute;
+	right: 9px;
+	top: 7px;
+}
+
+.close:hover {
+	opacity: .5;
+}
+
+#popupText {
+	margin-right: 23px;
+}
