@@ -15,9 +15,9 @@ require(['js/qlik'], (qlik) => {
   });
 
 	//open apps -- inserted here --
-	var app = qlik.openApp('2b26dd49-cdcc-49ba-b4ee-31fbf436816d', config);
+	const app = qlik.openApp('2b26dd49-cdcc-49ba-b4ee-31fbf436816d', config);
 
-	var app1 = qlik.openApp('17787584-b0e1-49f7-aceb-dd635fce80b4', config);
+	const app1 = qlik.openApp('17787584-b0e1-49f7-aceb-dd635fce80b4', config);
 
 	//get objects -- inserted here --
 	app1.getObject('QV06','xfvKMP');
