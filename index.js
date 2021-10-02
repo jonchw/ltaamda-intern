@@ -27,5 +27,3 @@ require(['js/qlik'], (qlik) => {
 	app1.getObject('QV03','xa5e0f12c-38f5-4da9-8f3f-0e4566b28398');
 	app1.getObject('QV02','hRZaKk');
 	app.getObject('QV01','qQJqn');
-
-} );
