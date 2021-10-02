@@ -1,5 +1,5 @@
 var config = {
-	host: https://npxi73rypiw4f5e.ap.qlikcloud.com,
+	host: npxi73rypiw4f5e.ap.qlikcloud.com,
 	prefix: '/',
 	port: 433,
 	isSecure: true,
