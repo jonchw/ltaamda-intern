@@ -1,7 +1,7 @@
 const config = {
 	host: npxi73rypiw4f5e.ap.qlikcloud.com,
 	prefix: '/',
-	port: 433,
+	port: 443,
 	isSecure: true,
     webIntegrationId: '4caLPkf1ugaOmVvjfo9SAr2wanQOM3SE'
 };
