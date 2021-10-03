@@ -1,10 +1,51 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-<meta charset="utf-8" />
-<title>Simple web app</title>
-<div id="intro">Loading...</div>
-<div id="title">Loading...</div>
-<script src="https://unpkg.com/enigma.js@2.7.0/enigma.min.js"></script>
-<script src="app.js"></script>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <script type="text/javascript">
+    const webIntegrationId = "g-yrbnOz9wV5-YnIqYLZMgfAxf_iKg30";
+    function login() {
+      function isLoggedIn() {
+        return fetch("https://yourtenant.eu.qlikcloud.com/api/v1/users/me", {
+          method: 'GET',
+          mode: 'cors',
+          credentials: 'include',
+          headers: {
+            'Content-Type': 'application/json',
+            'qlik-web-integration-id': webIntegrationId,
+          },
+        }).then(response => {
+          return response.status === 200;
+        });
+      }
+      return isLoggedIn().then(loggedIn => {
+        if (!loggedIn) {
+          // check login
+            window.location.href = "https://yourtenant.eu.qlikcloud.com/login?qlik-web-integration-id=" + webIntegrationId + "&returnto=" + location.href;          
+        }
+      });
+    }
+	login()
+  </script>
+</head>
+
+<body style="overflow: auto">
+ 
+  <div class="topnav">
+  <a class="active" href="#home">REAMS</a>
+  <a href="#maintenance.html">Maintenance</a>
+  <a href="#resource">Resource</a>
+   <a href="#renewal">Renewal</a>
+  <a href="#finance">Finance</a>
+  </div>
+  
+  <iframe 
+    src="https://npxi73rypiw4f5e.ap.qlikcloud.com/single/?appid=2b26dd49-cdcc-49ba-b4ee-31fbf436816d&obj=qQJqn&opt=ctxmenu,currsel" 
+    style="border:none;width:100%;height:100%;"></iframe>
+</body>
 
 </html>
