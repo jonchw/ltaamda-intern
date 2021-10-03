@@ -2,11 +2,36 @@
 <html lang="en">
 
 <head>
-  <title>REAMS</title>
-  <link rel="stylesheet" href="index.css">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>REAMS</title>
+  <link rel="stylesheet" href="index.css">
+  <script type="text/javascript">
+    const webIntegrationId = "g-yrbnOz9wV5-YnIqYLZMgfAxf_iKg30";
+    function login() {
+      function isLoggedIn() {
+        return fetch("https://yourtenant.eu.qlikcloud.com/api/v1/users/me", {
+          method: 'GET',
+          mode: 'cors',
+          credentials: 'include',
+          headers: {
+            'Content-Type': 'application/json',
+            'qlik-web-integration-id': webIntegrationId,
+          },
+        }).then(response => {
+          return response.status === 200;
+        });
+      }
+      return isLoggedIn().then(loggedIn => {
+        if (!loggedIn) {
+          // check login
+            window.location.href = "https://yourtenant.eu.qlikcloud.com/login?qlik-web-integration-id=" + webIntegrationId + "&returnto=" + location.href;          
+        }
+      });
+    }
+	login()
+  </script>
 </head>
 	
 <body style="height:600px;">
