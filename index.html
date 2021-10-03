@@ -8,10 +8,10 @@
   <title>REAMS</title>
   <link rel="stylesheet" href="index.css">
   <script type="text/javascript">
-    const webIntegrationId = "g-yrbnOz9wV5-YnIqYLZMgfAxf_iKg30";
+    const webIntegrationId = "";
     function login() {
       function isLoggedIn() {
-        return fetch("https://yourtenant.eu.qlikcloud.com/api/v1/users/me", {
+        return fetch("https://npxi73rypiw4f5e.ap.qlikcloud.com//api/v1/users/me", {
           method: 'GET',
           mode: 'cors',
           credentials: 'include',
@@ -26,7 +26,7 @@
       return isLoggedIn().then(loggedIn => {
         if (!loggedIn) {
           // check login
-            window.location.href = "https://yourtenant.eu.qlikcloud.com/login?qlik-web-integration-id=" + webIntegrationId + "&returnto=" + location.href;          
+            window.location.href = "https://npxi73rypiw4f5e.ap.qlikcloud.com/login?qlik-web-integration-id=" + webIntegrationId + "&returnto=" + location.href;          
         }
       });
     }
