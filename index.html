@@ -2,36 +2,11 @@
 <html lang="en">
 
 <head>
+  <title>REAMS</title>
+  <link rel="stylesheet" href="index.css">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="index.css">
-  <title>REAMS</title>
-  <script type="text/javascript">
-    const webIntegrationId = "g-yrbnOz9wV5-YnIqYLZMgfAxf_iKg30";
-    function login() {
-      function isLoggedIn() {
-        return fetch("https://yourtenant.eu.qlikcloud.com/api/v1/users/me", {
-          method: 'GET',
-          mode: 'cors',
-          credentials: 'include',
-          headers: {
-            'Content-Type': 'application/json',
-            'qlik-web-integration-id': webIntegrationId,
-          },
-        }).then(response => {
-          return response.status === 200;
-        });
-      }
-      return isLoggedIn().then(loggedIn => {
-        if (!loggedIn) {
-          // check login
-            window.location.href = "https://yourtenant.eu.qlikcloud.com/login?qlik-web-integration-id=" + webIntegrationId + "&returnto=" + location.href;          
-        }
-      });
-    }
-	login()
-  </script>
 </head>
 	
 <body style="height:600px;">
@@ -44,6 +19,7 @@
   <a href="#finance">Finance</a>
   </div>
   
+ <div id='obj-div'>
   <iframe 
     src="https://npxi73rypiw4f5e.ap.qlikcloud.com/single/?appid=2b26dd49-cdcc-49ba-b4ee-31fbf436816d&obj=qQJqn&opt=ctxmenu,currsel" 
     style="border:none;width:100%;height:100%;"></iframe>
@@ -52,10 +28,11 @@
      style="border:none;width:100%;height:100%;"></iframe>
    <iframe 
      src="https://npxi73rypiw4f5e.ap.qlikcloud.com/single/?appid=17787584-b0e1-49f7-aceb-dd635fce80b4&obj=jTuCwkB&opt=ctxmenu,currsel&select=clearall" 
-     style="border:none;width:30%;height:100%;"></iframe>
+     style="border:none;width:100%;height:100%;"></iframe>
    <iframe 
      src="https://npxi73rypiw4f5e.ap.qlikcloud.com/single/?appid=17787584-b0e1-49f7-aceb-dd635fce80b4&obj=a5e0f12c-38f5-4da9-8f3f-0e4566b28398&opt=ctxmenu,currsel&select=clearall" 
-     style="border:none;width:70%;height:100%;"></iframe>
+     style="border:none;width:100%;height:100%;"></iframe>
+</div>
 </body>
 
 </html>
