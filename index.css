@@ -1,7 +1,7 @@
 /* Add a black background color to the top navigation */
 .topnav {
   background-color: #032A67;
-  overflow: none;
+  overflow: hidden;
   font-family: sans-serif;
   font-size: 14px;
 }
@@ -19,7 +19,7 @@
 /* Change the color of links on hover */
 .topnav a:hover {
   background-color: #5187DC;
-  color: black;
+  color: white;
 }
 
 /* Add a color to the active/current link */
