@@ -45,7 +45,7 @@
       }
   
       // grab the first app ID in the list:
-      const appId = apps.data[0].resourceId;
+      const appId = apps.data[0].2b26dd49-cdcc-49ba-b4ee-31fbf436816d;
   
       // build a websocket URL:
       const url = `${tenantUri.replace(
