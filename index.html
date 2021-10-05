@@ -7,31 +7,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>REAMS</title>
   <link rel="stylesheet" href="index.css">
-  <script type="text/javascript">
-    const webIntegrationId = "4caLPkf1ugaOmVvjfo9SAr2wanQOM3SE";
-    function login() {
-      function isLoggedIn() {
-        return fetch("https://npxi73rypiw4f5e.ap.qlikcloud.com//api/v1/users/me", {
-          method: 'GET',
-          mode: 'cors',
-          credentials: 'include',
-          headers: {
-            'Content-Type': 'application/json',
-            'qlik-web-integration-id': webIntegrationId,
-          },
-        }).then(response => {
-          return response.status === 200;
-        });
-      }
-      return isLoggedIn().then(loggedIn => {
-        if (!loggedIn) {
-          // check login
-            window.location.href = "https://npxi73rypiw4f5e.ap.qlikcloud.com/login?qlik-web-integration-id=" + webIntegrationId + "&returnto=" + location.href;          
-        }
-      });
-    }
-	login()
-  </script>
+  
 </head>
 	
 	<body style="height:600px;">
