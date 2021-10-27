@@ -1,10 +1,10 @@
 var prefix = window.location.pathname.substr( 0, window.location.pathname.toLowerCase().lastIndexOf( "/extensions" ) + 1 );
 
 var config = {
-	host: window.location.hostname,
-	prefix: prefix,
-	port: window.location.port,
-	isSecure: window.location.protocol === "https:"
+	host: "npxi73rypiw4f5e.ap.qlikcloud.com",
+	prefix: "/",
+	port: 443,
+	isSecure: true
 };
 //to avoid errors in workbench: you can remove this when you have added an app
 var app;
