@@ -97,13 +97,9 @@ require( ["js/qlik"], function ( qlik ) {
 
 	var app1 = qlik.openApp('2b26dd49-cdcc-49ba-b4ee-31fbf436816d', config);
 
-	var app3 = qlik.openApp('17787584-b0e1-49f7-aceb-dd635fce80b4', config);
-
 
 	//get objects -- inserted here --
 	app.getObject('QV99','HDThZ');
-	
-	
 	
 	app.getObject('QV03','PvgapdM');
 	
@@ -116,11 +112,6 @@ require( ["js/qlik"], function ( qlik ) {
 	app.getObject('QV02','yVWmD');
 	
 	app1.getObject('QV08','qQJqn');
-	
-	
-	app3.getObject('QV10','a5e0f12c-38f5-4da9-8f3f-0e4566b28398');
-	app3.getObject('QV11','PAppmU');
-	app3.getObject('QV12','hRZaKk');
 	
 	
 	//create cubes and lists -- inserted here --
