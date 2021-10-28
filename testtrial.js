@@ -93,15 +93,11 @@ require( ["js/qlik"], function ( qlik ) {
 
 	//callbacks -- inserted here --
 	//open apps -- inserted here --
-	var app = qlik.openApp('Executive Dashboard.qvf', config);
+	var app = qlik.openApp('ccee29bf-4bbd-4555-a3bd-1f64ce6b3cd2', config);
 
 	var app1 = qlik.openApp('2b26dd49-cdcc-49ba-b4ee-31fbf436816d', config);
 
-	var app2 = qlik.openApp('International Apparel Analysis.qvf', config);
-
 	var app3 = qlik.openApp('17787584-b0e1-49f7-aceb-dd635fce80b4', config);
-
-	var app4 = qlik.openApp('Consumer Sales.qvf', config);
 
 
 	//get objects -- inserted here --
@@ -109,16 +105,15 @@ require( ["js/qlik"], function ( qlik ) {
 	
 	
 	
+	app.getObject('QV03','PvgapdM');
 	
-	app.getObject('QV03','GJxgd');
+	app.getObject('QV07','qgVhE');
+	app.getObject('QV05','umjpJqs');
 	
-	app.getObject('QV07','BmfQbz');
-	app.getObject('QV05','trePT');
+	app.getObject('QV04','PPVbPr');
 	
-	app.getObject('QV04','nvqpV');
-	
-	app.getObject('QV01','JEBdZz');
-	app.getObject('QV02','GJxgd');
+	app.getObject('QV01','SqDbku');
+	app.getObject('QV02','yVWmD');
 	
 	app1.getObject('QV08','qQJqn');
 	
@@ -126,11 +121,7 @@ require( ["js/qlik"], function ( qlik ) {
 	app3.getObject('QV10','a5e0f12c-38f5-4da9-8f3f-0e4566b28398');
 	app3.getObject('QV11','PAppmU');
 	app3.getObject('QV12','hRZaKk');
-	app4.getObject('QV13','pyQPxfg');
-	app4.getObject('QV14','LXAaTP');
-	app4.getObject('QV15','qamd');
-	app4.getObject('QV16','MEAjCJ');
-	app4.getObject('QV17','NrHfp');
+	
 	
 	//create cubes and lists -- inserted here --
 	if ( app ) {
