@@ -101,7 +101,7 @@ require( ["js/qlik"], function ( qlik ) {
 
 
 	//get objects -- inserted here --
-	app3.getObject('QV99','hRZaKk');
+	app.getObject('QV99','HDThZ');
 	
 	
 	
