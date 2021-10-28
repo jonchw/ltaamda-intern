@@ -1,17 +1,15 @@
-var prefix = window.location.pathname.substr( 0, window.location.pathname.toLowerCase().lastIndexOf( "/extensions" ) + 1 );
-
-var config = {
+const config = {
 	host: "npxi73rypiw4f5e.ap.qlikcloud.com",
 	prefix: "/",
 	port: 443,
-	isSecure: true
+	isSecure: true,
+	webIntegrationId: "4caLPkf1ugaOmVvjfo9SAr2wanQOM3SE"
 };
 //to avoid errors in workbench: you can remove this when you have added an app
-var app;
-require.config( {
-	baseUrl: (config.isSecure ? "https://" : "http://" ) + config.host + (config.port ? ":" + config.port : "" ) + config.prefix + "resources"
-} );
-
+require.config({
+  baseUrl: `https://${config.host}/resources`,
+  webIntegrationId: config.webIntegrationId
+});
 require( ["js/qlik"], function ( qlik ) {
 
 	var control = false;
@@ -97,11 +95,11 @@ require( ["js/qlik"], function ( qlik ) {
 	//open apps -- inserted here --
 	var app = qlik.openApp('Executive Dashboard.qvf', config);
 
-	var app1 = qlik.openApp('RailLine.qvf', config);
+	var app1 = qlik.openApp('2b26dd49-cdcc-49ba-b4ee-31fbf436816d', config);
 
 	var app2 = qlik.openApp('International Apparel Analysis.qvf', config);
 
-	var app3 = qlik.openApp('Helpdesk Management.qvf', config);
+	var app3 = qlik.openApp('17787584-b0e1-49f7-aceb-dd635fce80b4', config);
 
 	var app4 = qlik.openApp('Consumer Sales.qvf', config);
 
