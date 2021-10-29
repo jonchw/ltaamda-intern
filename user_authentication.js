@@ -11,6 +11,7 @@ async function connect() {
         credentials: 'include',
         headers: {                  
             'Qlik-Web-Integration-ID':webIntegrationId
+            window.location.href = 'https://https://ltaamda-intern.studio';
         }
     })
     .then(async function(response)
@@ -20,7 +21,6 @@ async function connect() {
             const url = new URL(`${urlQlikServer}/login`);
             url.searchParams.append('returnto', 'https://npxi73rypiw4f5e.ap.qlikcloud.com');
             url.searchParams.append('qlik-web-integration-id', webIntegrationId);
-            window.location.href = 'https://https://ltaamda-intern.studio/';
         }	
     })
     .catch(function(error)
