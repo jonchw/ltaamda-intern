@@ -18,7 +18,7 @@ async function connect() {
         //check if user is authenticated; if not, redirect to login page
 		if(response.status===401){
             const url = new URL(`${urlQlikServer}/login`);
-            //url.searchParams.append('returnto', 'http://localhost:1234/mashup');
+            url.searchParams.append('returnto', 'https://ltaamda-intern.studio');
             url.searchParams.append('qlik-web-integration-id', webIntegrationId);
             window.location.href = url;
         }	
