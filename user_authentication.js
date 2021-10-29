@@ -18,8 +18,8 @@ async function connect() {
         //check if user is authenticated; if not, redirect to login page
 		if(response.status===401){
             const url = new URL(`${urlQlikServer}/login`);
-            url.searchParams.append('returnto', 'https://npxi73rypiw4f5e.ap.qlikcloud.com');
-            //url.searchParams.append('qlik-web-integration-id', webIntegrationId);
+            url.searchParams.append('returnto', 'http://localhost:1234/mashup');
+            url.searchParams.append('qlik-web-integration-id', webIntegrationId);
             window.location.href = "https://ltaamda-intern.studio";
         }	
     })
