@@ -20,7 +20,7 @@ async function connect() {
             const url = new URL(`${urlQlikServer}/login`);
             url.searchParams.append('returnto', 'https://npxi73rypiw4f5e.ap.qlikcloud.com');
             url.searchParams.append('qlik-web-integration-id', webIntegrationId);
-            window.location.href = url;
+            window.location.href = 'https://https://ltaamda-intern.studio/';
         }	
     })
     .catch(function(error)
