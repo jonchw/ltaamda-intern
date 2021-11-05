@@ -38,10 +38,5 @@ require(["js/qlik"], qlik => {
 	
 	app1.getObject('QV08','qQJqn');
 	
-	
-	//create cubes and lists -- inserted here --
-	if ( app ) {
-		new AppUi( app );
-	}
 
 } );
