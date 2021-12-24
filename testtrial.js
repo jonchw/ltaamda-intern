@@ -85,7 +85,8 @@ require( ["js/qlik"], qlik => {
 			}
 		} );
 	}
-
+	
+	qlik.theme.apply('purple-theme');
 	//callbacks -- inserted here --
 	//open apps -- inserted here --
 	var app = qlik.openApp('0bb14c54-1b57-43e5-a9cf-a33fb09ef9b3', config);
